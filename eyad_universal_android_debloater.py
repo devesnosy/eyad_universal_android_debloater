@@ -38,7 +38,7 @@ def disable_play_store():
 
 
 def print_enabled_packages():
-    for pkg_name in get_enabled_package_names():
+    for pkg_name in sorted(get_enabled_package_names()):
         print(pkg_name)
 
 
