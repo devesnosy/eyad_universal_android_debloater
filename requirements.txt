@@ -1,0 +1,5 @@
+attrs==24.3.0
+clize==5.0.2
+docutils==0.21.2
+od==2.0.2
+sigtools==4.0.1
