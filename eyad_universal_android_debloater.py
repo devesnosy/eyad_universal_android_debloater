@@ -37,5 +37,15 @@ def disable_play_store():
     disable_package("com.android.vending")
 
 
+def print_enabled_packages():
+    for pkg_name in get_enabled_package_names():
+        print(pkg_name)
+
+
 if __name__ == "__main__":
-    run(disable_all_recommended_software, disable_play_store)
+    run(
+        disable_all_recommended_software,
+        disable_play_store,
+        print_enabled_packages,
+        disable_package,
+    )
